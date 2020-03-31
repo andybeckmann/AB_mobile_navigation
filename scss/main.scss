@@ -1,0 +1,40 @@
+// Global styles
+@use 'global';
+
+// AB_fixed_header
+@use 'components/AB_mobile_navigation';
+
+// Demo styles
+nav#main-navigation {
+	ul {
+		li {
+			a {
+				padding: 16px 32px;
+				text-align: center;
+				background: #ccc;
+				transition: .25s ease background;
+				display: block;
+				border-bottom: 1px solid #999;
+				color: #333;
+
+				@media (min-width: 768px) {
+					border-bottom: 0;
+					border-right: 1px solid #999;
+				}
+
+				&:hover {
+					background: #bbb;
+				}
+			}
+		}
+
+		li:last-of-type {
+			a {
+				border-bottom: 0;
+				@media (min-width: 768px) {
+					border-right: 0;
+				}
+			}
+		}
+	}
+}

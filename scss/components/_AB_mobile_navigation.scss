@@ -1,0 +1,71 @@
+/**
+ * AB_mobile_navigation
+ * version 1.0.0
+ */
+
+#main-navigation-toggle-button {
+	text-align: center;
+
+	svg {
+		max-width: 50px;
+		margin: 0 auto;
+		transform: rotate(45deg);
+		transition: .25s ease transform;
+		cursor: pointer;
+		margin-bottom: 25px;
+		display: inline-block;
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+	}
+}
+
+#main-navigation-toggle-button.pressed {
+	svg {
+		transform: rotate(90deg);
+	}
+}
+
+nav#main-navigation {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		overflow: hidden;
+
+		@media (min-width: 768px) {
+			display: flex;
+		}
+
+		li {
+			height: 0;
+			transition: .25s ease height;
+
+			@media (min-width: 768px) {
+				height: auto;
+			}
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+nav#main-navigation.open {
+	ul {
+
+		@media (min-width: 768px) {
+			display: flex;
+		}
+
+		li {
+			height: 51px;
+
+			@media (min-width: 768px) {
+				height: auto;
+			}
+		}
+	}
+}
