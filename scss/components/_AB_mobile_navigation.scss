@@ -51,6 +51,18 @@ nav#main-navigation {
 			}
 		}
 	}
+
+	ul.noscript {
+		display: block;
+
+		@media (min-width: 768px) {
+			display: none;
+		}
+
+		li {
+			height: 51px;
+		}
+	}
 }
 
 nav#main-navigation.open {

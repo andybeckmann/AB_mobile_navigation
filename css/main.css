@@ -58,6 +58,17 @@ nav#main-navigation ul li {
 nav#main-navigation ul li a {
   text-decoration: none;
 }
+nav#main-navigation ul.noscript {
+  display: block;
+}
+@media (min-width: 768px) {
+  nav#main-navigation ul.noscript {
+    display: none;
+  }
+}
+nav#main-navigation ul.noscript li {
+  height: 51px;
+}
 
 @media (min-width: 768px) {
   nav#main-navigation.open ul {
