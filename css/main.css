@@ -48,6 +48,7 @@ nav#main-navigation ul {
 }
 nav#main-navigation ul li {
   height: 0;
+  width: 100%;
   transition: 0.25s ease height;
 }
 @media (min-width: 768px) {
@@ -85,7 +86,7 @@ nav#main-navigation.open ul li {
 }
 
 nav#main-navigation ul li a {
-  padding: 16px 32px;
+  padding: 16px 0;
   text-align: center;
   background: #ccc;
   transition: 0.25s ease background;

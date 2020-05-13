@@ -40,6 +40,7 @@ nav#main-navigation {
 
 		li {
 			height: 0;
+			width: 100%;
 			transition: .25s ease height;
 
 			@media (min-width: 768px) {
