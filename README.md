@@ -3,9 +3,13 @@ AB_mobile_navigation
 
 AB_mobile_navigation adds a visibility toggle feature to site navigation on small screens.
 
-## Screenshot
+## Screenshot (Desktop)
 
-![Screenshot](/screenshot.gif?raw=true)
+![Screenshot](/screenshot-desktop.gif?raw=true)
+
+## Screenshot (Mobile)
+
+![Screenshot](/screenshot-mobile.gif?raw=true)
 
 ## Required files
 
